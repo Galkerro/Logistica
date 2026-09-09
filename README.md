@@ -49,5 +49,13 @@ CREATE TABLE veiculos (
 3. Adicione o driver JDBC do PostgreSQL às dependências ou bibliotecas do seu projeto.
 4. Coloque a imagem que servirá de plano de fundo com o nome containers.jpg dentro do diretório src do seu projeto.
 5. Execute a classe Main.java para abrir a interface gráfica.
-6. [Gravação de Tela 2026-09-08 225521.mp4](Midia/Grava%C3%A7%C3%A3o%20de%20Tela%202026-09-08%20225521.mp4)
-7. ![img.png](img.png)
+7. 
+
+https://github.com/user-attachments/assets/6bddccbd-143a-479a-b030-be306665b933
+
+
+
+
+
+
+8. ![img.png](img.png)
