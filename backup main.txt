@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        Patio meuPatio = new Patio();
+        ArrayList<Veiculo> Patio = new ArrayList<>();
+        int contadorId = 1;
+        int opcao = 0;
+        while (opcao != 3) {
+            System.out.println("\n SELECIONE O TIPO DE VEÍCULO ");
+            System.out.println("1 - Carro");
+            System.out.println("2 - Moto");
+            System.out.println("3 - Encerrar Sistema");
+            System.out.print("Escolha uma opção: ");
+            opcao = teclado.nextInt();
+            teclado.nextLine();
+
+            switch (opcao) {
+                case 1:
+                    System.out.println("\n Registrar Carro ");
+                    System.out.print("Digite o Modelo: ");
+                    String modeloCarro = teclado.nextLine();
+                    System.out.print("Digite a Placa: ");
+                    String placaCarro = teclado.nextLine();
+                    System.out.print("Digite a Cor: ");
+                    String corCarro = teclado.nextLine();
+
+                    Carro novoCarro = new Carro(contadorId++, placaCarro, modeloCarro, corCarro);
+                    meuPatio.cadastrarVeiculo(novoCarro);
+                    System.out.println(" Carro ID: " + novoCarro.getId() + " adicionado ao Patio!");
+                    break;
+
+                case 2:
+                    System.out.println("\n Regiistrar Moto ");
+                    System.out.print("Digite o Modelo: ");
+                    String modeloMoto = teclado.nextLine();
+                    System.out.print("Digite a Placa: ");
+                    String placaMoto = teclado.nextLine();
+                    System.out.print("Digite a Cor: ");
+                    String corMoto = teclado.nextLine();
+
+                    Moto novaMoto = new Moto(contadorId++, placaMoto, modeloMoto, corMoto);
+                    meuPatio.cadastrarVeiculo(novaMoto);
+                    System.out.println(" Moto ID: " + novaMoto.getId() + " adicionada ao Patio!");
+                    break;
+
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opção inválida! Escolha 1, 2 ou 3.");
+                    break;
+
+            }
+        }
+        System.out.println("\n Sistema encerrado com sucesso. Até logo!");
+        teclado.close();
+    }
+}
