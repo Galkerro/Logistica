@@ -2,6 +2,8 @@
 
 Este é um sistema desktop nativo desenvolvido em Java para o gerenciamento logístico de veículos em um pátio portuário. O software automatiza o controle de entrada e saída da portaria, contando com persistência de dados em banco PostgreSQL, interface gráfica customizada com transparência e sincronização de tempo com o Horário Oficial de Brasília por meio de uma API externa.
 VOU COLOCAR ALGUNS PRINTS E UM VIDEO NO FINAL PARA MOSTRAR FUNCIONALIDADE. QUEM QUISER PODE USAR ESTE PROGRAMA NA SUA EMPRESA NÃO VOU COBRAR, SE TE AJUDAR E QUISER ME RETRIBUIR O PIX É 19981813186 MEU ZAP TAMBEM :)
+<img width="712" height="625" alt="Logistica" src="https://github.com/user-attachments/assets/99d80e2a-4f86-4d28-9426-3466b91fc37b" />
+
 
 ## Funcionalidades Principais
 
